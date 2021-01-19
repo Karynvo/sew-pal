@@ -12,7 +12,7 @@ const IndexPage = () => {
           </h2>
         </div>
       </div>
-      <div className="container mx-auto px-12 py-6">
+      <div className="container mx-auto md:px-6 md:py-6">
         <iframe className="airtable-embed" src="https://airtable.com/embed/shrgzCG69rKr5mST4?backgroundColor=redLight&viewControls=on" frameBorder="0"></iframe>
       </div>
     </main>

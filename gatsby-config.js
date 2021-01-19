@@ -4,12 +4,12 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "jkl",
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "jkl",
+    //   },
+    // },
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
     // "gatsby-plugin-sitemap",
