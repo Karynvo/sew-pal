@@ -1,0 +1,45 @@
+{
+    "paths": [
+        {
+            "name": "/table",
+            "lambdaFunction": "sewPalLambda",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/GET"
+                ]
+            }
+        }
+    ],
+    "resourceName": "sewPalApi",
+    "apiName": "sewPalApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "sewPalLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-sewpal-dev-234908-authRole",
+        "unAuthRoleName": "amplify-sewpal-dev-234908-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "sewPalLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "f924bc2e"
+}
