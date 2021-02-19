@@ -1,4 +1,5 @@
 import * as React from "react"
+import PatternGrid from '../components/PatternGrid';
 
 // markup
 const IndexPage = () => {
@@ -13,7 +14,8 @@ const IndexPage = () => {
         </div>
       </div>
       <div className="container mx-auto md:px-6 md:py-6">
-        <iframe className="airtable-embed" src="https://airtable.com/embed/shrgzCG69rKr5mST4?backgroundColor=redLight&viewControls=on" frameBorder="0"></iframe>
+        <PatternGrid />
+        {/* <iframe className="airtable-embed" src="https://airtable.com/embed/shrgzCG69rKr5mST4?backgroundColor=redLight&viewControls=on" frameBorder="0"></iframe> */}
       </div>
     </main>
   )
